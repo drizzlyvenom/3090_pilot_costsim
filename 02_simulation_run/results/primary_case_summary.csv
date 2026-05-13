@@ -1,0 +1,7 @@
+﻿run_id,baseline,model_profile,model_name,base_model_memory_mb,reserve_target_mb,full_res,global_res,roi_res,roi_count_requested,roi_count_effective,adapter_count,active_top_k_requested,active_top_k_effective,adapter_structure,visual_tokens,visual_memory_mb,resident_adapter_memory_mb,temporary_load_buffer_mb,estimated_peak_memory_mb,estimated_peak_memory_gb,reserve_pass,reserve_headroom_mb,load_count,evict_count,hold_count,latency_proxy_ms,policy_trace
+costsim-01793,B0,mid_7b_vlm,Mid 7B VLM proxy,12000,4096,1344x1344,336x336,336x336,0,0,0,0,0,none,576,357.12,0.0,0.0,12357.12,12.068,True,6586.88,0,0,0,48.34,n/a
+costsim-01796,B1,mid_7b_vlm,Mid 7B VLM proxy,12000,4096,1344x1344,336x336,336x336,0,0,0,0,0,none,9216,5713.92,0.0,0.0,17713.92,17.299,True,1230.08,0,0,0,143.38,n/a
+costsim-01798,B2,mid_7b_vlm,Mid 7B VLM proxy,12000,4096,1344x1344,336x336,336x336,3,3,0,0,0,none,2304,1428.48,0.0,0.0,13428.48,13.114,True,5515.52,0,0,0,67.34,n/a
+costsim-01828,B4-lite,mid_7b_vlm,Mid 7B VLM proxy,12000,4096,1344x1344,336x336,336x336,3,3,16,2,2,independent_all_resident,2304,1428.48,2880,96,16404.48,16.02,True,2539.52,2,0,0,103.34,n/a
+costsim-01972,B5-lite,mid_7b_vlm,Mid 7B VLM proxy,12000,4096,1344x1344,336x336,336x336,3,3,16,2,2,shared_all_resident,2304,1428.48,940,96,14464.48,14.125,True,4479.52,2,0,0,83.34,n/a
+costsim-02116,B7-lite,mid_7b_vlm,Mid 7B VLM proxy,12000,4096,1344x1344,336x336,336x336,3,3,16,2,2,shared_budget_conditioned,2304,1428.48,310,96,13834.48,13.51,True,5109.52,2,0,0,83.34,allow_initial_plan

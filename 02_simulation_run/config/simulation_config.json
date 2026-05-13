@@ -1,0 +1,60 @@
+{
+  "project_name": "Budget-Conditioned Foveated Adapter Policy Cost Simulation",
+  "created_at": "2026-05-13",
+  "hardware_assumption": {
+    "gpu_name": "NVIDIA GeForce RTX 3090",
+    "total_vram_mb": 24576,
+    "system_safety_margin_mb": 1536,
+    "runtime_budget_mb": 23040
+  },
+  "token_model": {
+    "patch_size": 14,
+    "activation_mb_per_visual_token": 0.24,
+    "kv_cache_mb_per_visual_token": 0.38,
+    "latency_ms_per_visual_token": 0.011
+  },
+  "memory_model": {
+    "base_latency_ms": 42,
+    "temporary_load_buffer_mb": 192,
+    "minimum_temporary_load_buffer_mb": 96
+  },
+  "model_profiles": [
+    {
+      "id": "compact_7b_4bit",
+      "name": "Compact 7B 4-bit VLM proxy",
+      "base_model_memory_mb": 9000
+    },
+    {
+      "id": "mid_7b_vlm",
+      "name": "Mid 7B VLM proxy",
+      "base_model_memory_mb": 12000,
+      "primary": true
+    },
+    {
+      "id": "heavy_13b_4bit",
+      "name": "Heavy 13B 4-bit VLM proxy",
+      "base_model_memory_mb": 15500
+    }
+  ],
+  "resolutions": {
+    "full_res": [[1024, 1024], [1344, 1344]],
+    "global_res": [[336, 336], [448, 448]],
+    "roi_res": [[336, 336], [448, 448]]
+  },
+  "grid": {
+    "roi_counts": [1, 3, 5],
+    "adapter_counts": [4, 8, 16, 32],
+    "active_top_k": [1, 2, 4],
+    "reserve_targets_mb": [2048, 4096, 6144]
+  },
+  "primary_case": {
+    "model_profile": "mid_7b_vlm",
+    "reserve_target_mb": 4096,
+    "full_res": [1344, 1344],
+    "global_res": [336, 336],
+    "roi_res": [336, 336],
+    "roi_count": 3,
+    "adapter_count": 16,
+    "active_top_k": 2
+  }
+}

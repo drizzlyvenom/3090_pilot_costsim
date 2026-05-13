@@ -1,0 +1,21 @@
+{
+  "notes": [
+    "This is a first-pass simulation table, not a measured LoRA parameter table.",
+    "Values are deliberately conservative enough to expose residency trade-offs on RTX 3090 24GB.",
+    "Replace these values with parameter-count-derived measurements when the target VLM and LoRA ranks are fixed."
+  ],
+  "independent": {
+    "rank8_memory_mb": 180,
+    "rank16_memory_mb": 360,
+    "load_latency_ms": 18,
+    "evict_latency_ms": 6
+  },
+  "shared_hydra_style": {
+    "shared_common_memory_mb": 220,
+    "rank8_branch_memory_mb": 45,
+    "rank16_branch_memory_mb": 90,
+    "load_latency_ms": 8,
+    "evict_latency_ms": 4
+  },
+  "simulation_rank": "rank8"
+}

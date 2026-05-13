@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-05-13T18:33:29",
+  "root": "C:\\Users\\user\\Documents\\New project 2\\output\\experiment\\3090_pilot_costsim",
+  "result_rows": 4032,
+  "files": {
+    "results_jsonl": "C:\\Users\\user\\Documents\\New project 2\\output\\experiment\\3090_pilot_costsim\\02_simulation_run\\results\\results.jsonl",
+    "summary_csv": "C:\\Users\\user\\Documents\\New project 2\\output\\experiment\\3090_pilot_costsim\\02_simulation_run\\results\\summary.csv",
+    "aggregate_summary_csv": "C:\\Users\\user\\Documents\\New project 2\\output\\experiment\\3090_pilot_costsim\\02_simulation_run\\results\\aggregate_summary.csv",
+    "primary_case_summary_csv": "C:\\Users\\user\\Documents\\New project 2\\output\\experiment\\3090_pilot_costsim\\02_simulation_run\\results\\primary_case_summary.csv",
+    "hardware_check": "C:\\Users\\user\\Documents\\New project 2\\output\\experiment\\3090_pilot_costsim\\02_simulation_run\\results\\hardware_check.json",
+    "peak_figure": "C:\\Users\\user\\Documents\\New project 2\\output\\experiment\\3090_pilot_costsim\\03_results_summary\\figures\\primary_peak_memory_bars.png",
+    "adapter_figure": "C:\\Users\\user\\Documents\\New project 2\\output\\experiment\\3090_pilot_costsim\\03_results_summary\\figures\\primary_adapter_memory_bars.png",
+    "pass_rate_figure": "C:\\Users\\user\\Documents\\New project 2\\output\\experiment\\3090_pilot_costsim\\03_results_summary\\figures\\reserve_pass_rate.png",
+    "markdown_report": "C:\\Users\\user\\Documents\\New project 2\\output\\experiment\\3090_pilot_costsim\\03_results_summary\\technical_report\\results_report_ko.md",
+    "docx_report": "C:\\Users\\user\\Documents\\New project 2\\output\\experiment\\3090_pilot_costsim\\03_results_summary\\technical_report\\results_report_ko.docx",
+    "pdf_report": "C:\\Users\\user\\Documents\\New project 2\\output\\experiment\\3090_pilot_costsim\\03_results_summary\\technical_report\\results_report_ko.pdf"
+  },
+  "checks": {
+    "pdf_render": {
+      "pdf": "C:\\Users\\user\\Documents\\New project 2\\output\\experiment\\3090_pilot_costsim\\03_results_summary\\technical_report\\results_report_ko.pdf",
+      "rendered": true,
+      "pages": 4,
+      "preview_artifacts": "moved to C:\\Users\\user\\Documents\\New project 2\\trashbin\\2026-05-13_3090_pilot_costsim_cleanup",
+      "error": null
+    },
+    "docx_text": {
+      "docx": "C:\\Users\\user\\Documents\\New project 2\\output\\experiment\\3090_pilot_costsim\\03_results_summary\\technical_report\\results_report_ko.docx",
+      "readable": true,
+      "paragraph_count": 23,
+      "table_count": 1,
+      "first_paragraph": "RTX 3090 기반 VRAM Cost Simulation 결과 보고서",
+      "error": null
+    }
+  },
+  "interpretation": {
+    "token_reduction_b2": 75.0,
+    "peak_reduction_b2": 24.19,
+    "peak_reduction_b7": 21.9,
+    "adapter_reduction_b5": 67.36,
+    "adapter_reduction_b7": 89.24,
+    "pass_rates": {
+      "B0": 1.0,
+      "B1": 1.0,
+      "B2": 1.0,
+      "B4-lite": 0.8125,
+      "B5-lite": 1.0,
+      "B7-lite": 1.0
+    },
+    "primary_trace": "allow_initial_plan",
+    "b7_total_runs": 1296,
+    "b7_adjusted_runs": 148,
+    "b7_hold_runs": 36,
+    "b4_fail_runs": 396,
+    "b7_fail_runs": 0
+  }
+}

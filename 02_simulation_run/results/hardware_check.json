@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-05-13T18:33:27",
+  "nvidia_smi": "NVIDIA GeForce RTX 3090, 24576 MiB, 596.21",
+  "torch": {
+    "torch_version": "1.13.1+cu117",
+    "cuda_available": true,
+    "device_name": "NVIDIA GeForce RTX 3090",
+    "total_memory_mb": 24575.5,
+    "free_memory_mb_before": 23336.0,
+    "sanity_note": "CUDA device was detected; allocation stress test was skipped to keep the report run non-invasive."
+  },
+  "cuda_sanity_allocation": null,
+  "errors": []
+}

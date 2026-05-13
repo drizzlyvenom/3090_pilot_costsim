@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+render_check/
+~$*
+*.tmp
+*.bak
