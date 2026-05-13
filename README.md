@@ -1,6 +1,6 @@
 # RTX 3090 Cost Simulation Pilot
 
-이 폴더는 `Budget-Conditioned Foveated Adapter Policy`의 0차 비용 시뮬레이션 패키지입니다. 실제 VLM 학습 없이 RTX 3090 24GB 기준 cost simulator로 VRAM 절약 가능성을 확인하고, 교수님께 공유할 수 있는 결과 보고서와 5페이지 소논문 초안을 함께 정리했습니다.
+이 폴더는 `Budget-Conditioned Foveated Adapter Policy`의 0차 비용 시뮬레이션 패키지입니다. 실제 VLM 학습 없이 RTX 3090 24GB 기준 cost simulator로 VRAM 절약 가능성을 확인하고, 결과 보고서와 5페이지 소논문 초안으로 정리했습니다.
 
 ## 폴더 구조
 
@@ -17,7 +17,7 @@
 
 ## 빠른 확인
 
-교수님께 바로 보여주기 좋은 파일:
+pdf 정리본:
 
 - `03_results_summary/short_papers/short_paper_costsim_en.pdf`
 - `03_results_summary/short_papers/short_paper_costsim_ko.pdf`
